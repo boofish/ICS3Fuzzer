@@ -1,10 +1,15 @@
-﻿## Compiling the project
+﻿## Preface
+
+Our instrumentation is based on DynamoRIO & WinAFL.
+Here, we express our sincere thanks to the authors & developers of DynamoRIO and WinAFL. 
+
+## Compiling the project
 
 To run the fuzzing process, this step is `NOT` necessary.
 
 + Prepare the DynamoRIO framework
 Before compile the project, 
-we need to download DynamoRIO environment, 
+we need to download&install DynamoRIO framework, 
 which can be seen from https://github.com/DynamoRIO/dynamorio
 
 + Preparing the compiler

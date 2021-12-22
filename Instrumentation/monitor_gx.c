@@ -650,9 +650,9 @@ DR_EXPORT void dr_client_main(client_id_t id, int argc, const char *argv[])
     drwrap_init();
     as_built_lock = dr_mutex_create();
 
-    dr_register_exit_event(event_exit); // operate on module_table
+    dr_register_exit_event(event_exit); // operating on module_table
 
-    drmgr_register_exception_event(onexception); // on handle exception
+    drmgr_register_exception_event(onexception); // on handling exception
 
     drmgr_register_bb_instrumentation_event(NULL, instrument_bb_coverage, NULL); // instrumentation on each inst for bb count, instrument_edge_coverage,instrument_bb_coverage
 
@@ -662,12 +662,12 @@ DR_EXPORT void dr_client_main(client_id_t id, int argc, const char *argv[])
 
     drmgr_register_module_unload_event(event_module_unload);
 
-    dr_register_nudge_event(event_nudge, id); // do not understand
+    dr_register_nudge_event(event_nudge, id); 
 
     client_id = id;
 
    
-    drx_register_soft_kills(event_soft_kill); // do not understand
+    drx_register_soft_kills(event_soft_kill); 
 
     // thread_afl_area =  (unsigned char *)dr_global_alloc(MAP_SIZE);
     thread_tls_field = drmgr_register_tls_field();

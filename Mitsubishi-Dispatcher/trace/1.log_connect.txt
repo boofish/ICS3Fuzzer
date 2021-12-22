@@ -1,0 +1,14 @@
+idx:0,bb_count:8b,bb_hash:2a7322e9
+idx:1,bb_count:8b,bb_hash:2a7322e9
+idx:2,bb_count:2ea,bb_hash:163290ff
+idx:3,bb_count:2c0,bb_hash:f5805f50
+idx:4,bb_count:278,bb_hash:5a73d768
+idx:5,bb_count:2be,bb_hash:8c960193
+idx:6,bb_count:285,bb_hash:c5a32826
+idx:7,bb_count:40d,bb_hash:6507f719
+idx:8,bb_count:2c0,bb_hash:77a9d761
+idx:9,bb_count:2ca,bb_hash:969fa212
+idx:10,bb_count:2dc,bb_hash:3358691d
+idx:11,bb_count:2c5,bb_hash:6483b716
+idx:12,bb_count:30e,bb_hash:74ef578c
+idx:13,bb_count:148,bb_hash:543bf346
