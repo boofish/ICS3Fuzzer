@@ -1,10 +1,8 @@
-# ICS<sup>3</sup>Fuzzer: A Framework for discovering protocol implementation bugs in supervisory software by fuzzing
+## ICS<sup>3</sup>Fuzzer: A Framework for discovering protocol implementation bugs in supervisory software by fuzzing
 
 <div align=center>
   <img src="https://github.com/boofish/ICS3Fuzzer/blob/main/img/system_architecture.png" width="350" height="250" />
 </div>
-
-## Preface
 
 To help understand the ideas in the paper, 
 and considering the situation of bug fix,
@@ -44,11 +42,11 @@ Also, you may need to install some python lib.
 
 Besides, you need to install AutoIt to write `guiautolits`, see https://www.autoitscript.com/site.
 
-We recommend that the main fuzzer and the proxies should be in different machines.
-The proxies and the target software can be on the same host, the main fuzzer(dispatcher) should be on another host. 
+We recommend that the main fuzzer and the proxies in different machines.
+The proxies and the target software can be on the same host, and the main fuzzer(dispatcher) should be on another. 
 
 
-### 1.Download & configure & install the `boofuzz`
+### 1.Install the `boofuzz`
 
 ```
 git clone https://github.com/jtpereyda/boofuzz.git
@@ -72,4 +70,21 @@ python -m pip install typing
 + run `python watchdog.py` on the same machine of GX Works2. It assumed that python lib `win32evtlog` has been installed.
 + run `python read_from_plc.py` from another machine. If things go smoothly, fuzzing process will be started!
 
+### 3.Findings
 
+CVE-2019-16353, 
+CVE-2021-29297,
+CVE-2021-29298,
+CVE-2021-20587, 
+CVE-2021-20588
+
+
+## Cite the paper
+
+@inproceedings{ics3fuzzer,
+  title={ICS3Fuzzer: A Framework for Discovering Protocol Implementation Bugs in ICS Supervisory Software by Fuzzing},
+  author={Fang, Dongliang and Song, Zhanwei and Guan, Le and Liu, Puzhuo and Peng, Anni and Cheng, Kai and Zheng, Yaowen and Liu, Peng and Zhu, Hongsong and Sun, Limin},
+  booktitle={Annual Computer Security Applications Conference},
+  pages={849--860},
+  year={2021}
+}
